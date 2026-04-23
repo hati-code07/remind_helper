@@ -2,8 +2,16 @@ import asyncio
 import os
 from dotenv import load_dotenv
 
-from aiogram import Bot, Dispatcher
+from aiogram import Bot, Dispatcher, types
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.types import WebhookInfo
+from fastapi import FastAPI, Request
+import uvicorn
+
+
+app = FastAPI()
+bot = Bot(token=os.getenv("BOT_TOKEN"))
+dp = Dispatcher()
 
 from handlers.start import router as start_router
 from handlers.tasks import router as tasks_router
