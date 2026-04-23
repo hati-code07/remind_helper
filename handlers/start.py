@@ -38,7 +38,7 @@ async def start_handler(message: Message):
             await session.commit()
     
     await message.answer(
-        "Привет! Я StudyBot 📚\n\n"
+        "Привет! Я HElPER 📚\n\n"
         "Твой помощник для учёбы!\n\n"
         "📝 Веди задачи\n"
         "📅 Планируй расписание\n"

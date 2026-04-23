@@ -1,4 +1,4 @@
-# Study Bot 🤖
+# REMIND HELPER 🤖
 
 Telegram бот для управления учебными задачами и расписанием.
 
