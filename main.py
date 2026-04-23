@@ -2,12 +2,10 @@ import asyncio
 import os
 from dotenv import load_dotenv
 
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import WebhookInfo
 from aiogram.types import BotCommand
-from fastapi import FastAPI, Request
-import uvicorn
 from flask import Flask
 import threading
 
@@ -42,7 +40,7 @@ from utils.scheduler import scheduler
 from utils.commands import set_commands
 from utils.check_deadlines import check_missed_deadlines
 
-app = FastAPI()
+
 bot = Bot(token=os.getenv("BOT_TOKEN"))
 dp = Dispatcher()
 

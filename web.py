@@ -19,6 +19,5 @@ if __name__ == "__main__":
     web_thread.start()
     
     # Запускаем бота
-    import asyncio
     from main import main
     asyncio.run(main())
